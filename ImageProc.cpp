@@ -1764,35 +1764,6 @@ VOID MyImageProc(BYTE** ppImage, UINT* pAppendData)
 //		}
 //	}
 //
-//	int iBoundary = 70;
-//	int iGroundTruth1 = 80;
-//	int iGroundTruth2 = 128;
-//	int iAllowableError = 2;
-//
-//	int iCountAll = 0;
-//	int iCountCorrect = 0;
-//
-//	BYTE btEvaluationMap[19200];
-//
-//	for (y = 0; y < IMAGE_HEIGHT; y++) {
-//		for (x = 0; x < IMAGE_WIDTH; x++) {
-//			btEvaluationMap[x + IMAGE_WIDTH*y] = btOutputDisparityOfMulti[x + IMAGE_WIDTH*y];
-//			if (btEvaluationMap[x + IMAGE_WIDTH*y] != 0) {
-//				iCountAll++;
-//				if (x < iBoundary && btEvaluationMap[x + IMAGE_WIDTH*y] >= iGroundTruth1 - 8 * iAllowableError && btEvaluationMap[x + IMAGE_WIDTH*y] <= iGroundTruth1 + 8 * iAllowableError) {
-//					iCountCorrect++;
-//				}
-//				if (x >= iBoundary && btEvaluationMap[x + IMAGE_WIDTH*y] >= iGroundTruth2 - 8 * iAllowableError && btEvaluationMap[x + IMAGE_WIDTH*y] <= iGroundTruth2 + 8 * iAllowableError) {
-//					iCountCorrect++;
-//				}
-//			}
-//		}
-//	}
-//
-//	dblGpOut[7] = (double)iCountCorrect / iCountAll;
-
-
-
 
 //カラーバー表示
 /*for (i = 0; i < IMAGE_DATA_LENGTH; i++) {
