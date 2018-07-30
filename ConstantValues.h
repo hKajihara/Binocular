@@ -69,7 +69,7 @@
 // 表示、処理関連の定数
 #define DISPLAY_RATE			1				// 描画レート
 #define IDB_BITMAP				IDB_BITMAP8		// 1:100, 2:200, 3:300, 4:128, 5:256, 6:384, 7:QQVGA, 8:QVGA
-#define PIXEL_SIZE				2				// １ピクセルの大きさ(1から5で指定)
+#define PIXEL_SIZE				1				// １ピクセルの大きさ(1から5で指定)
 #define IMAGE_INTERVAL			5				// 画像間のピクセル数
 #define NUM_OF_ROW_DISPLAY		4				// 水平方向の画面数
 #define NUM_OF_COL_DISPLAY		3				// 垂直方向の画面数
