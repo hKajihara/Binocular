@@ -1,0 +1,317 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_WAVE DIALOGEX 650, 0, 238, 169
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "WaveForm"
+MENU IDR_MENU2
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_LINE_EDIT,6,44,20,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    PUSHBUTTON      "+1",IDC_PL_ONE,6,73,19,14
+    PUSHBUTTON      "+10",IDC_PL_TEN,6,87,19,14
+    PUSHBUTTON      "-1",IDC_MN_ONE,6,20,18,14
+    PUSHBUTTON      "-10",IDC_MN_TEN,6,6,18,14
+    LTEXT           "Line",IDC_STATIC,9,57,14,8
+    PUSHBUTTON      "CH1",IDC_CH1,6,108,19,14
+    PUSHBUTTON      "CH2",IDC_CH2,6,120,19,14
+    PUSHBUTTON      "CH3",IDC_CH3,6,132,19,14
+    PUSHBUTTON      "CH4",IDC_CH4,6,144,19,14
+END
+
+IDD_DIALOG_EXPORT DIALOGEX 0, 0, 148, 54
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Save Bitmap"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Save",IDC_SAVE,90,18,50,14
+    PUSHBUTTON      "Cancel",IDC_CANCEL,90,36,50,14
+    EDITTEXT        IDC_EDIT_START,54,18,28,14,ES_AUTOHSCROLL
+    LTEXT           "Start Frame",IDC_STATIC,6,18,42,12
+    LTEXT           "End Frame",IDC_STATIC,6,36,42,12
+    EDITTEXT        IDC_EDIT_END,54,36,28,14,ES_AUTOHSCROLL
+    LTEXT           "スタティック",IDC_STATIC_TOTAL,30,6,84,8
+END
+
+IDD_DIALOG_CTRL DIALOGEX 10, 400, 580, 94
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "InSight Controller"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "File Read",IDC_LOAD,456,12,54,12
+    PUSHBUTTON      "Connect",IDC_CONNECT,12,12,48,48
+    EDITTEXT        IDC_EDIT1,516,69,54,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Record",IDC_RECORD,456,66,54,18
+    PUSHBUTTON      "Send",IDC_SEND,138,66,54,12
+    EDITTEXT        IDC_SEND_EDIT0,84,12,18,12,ES_AUTOHSCROLL
+    LTEXT           "0:",IDC_STATIC,76,13,8,8
+    EDITTEXT        IDC_SEND_EDIT1,114,12,18,12,ES_AUTOHSCROLL
+    LTEXT           "1:",IDC_STATIC,106,13,8,8
+    EDITTEXT        IDC_SEND_EDIT2,144,12,18,12,ES_AUTOHSCROLL
+    LTEXT           "2:",IDC_STATIC,136,13,8,8
+    EDITTEXT        IDC_SEND_EDIT3,174,12,18,12,ES_AUTOHSCROLL
+    LTEXT           "3:",IDC_STATIC,166,13,8,8
+    EDITTEXT        IDC_SEND_EDIT4,84,30,18,12,ES_AUTOHSCROLL
+    LTEXT           "4:",IDC_STATIC,76,31,8,8
+    EDITTEXT        IDC_SEND_EDIT5,114,30,18,12,ES_AUTOHSCROLL
+    LTEXT           "5:",IDC_STATIC,106,31,8,8
+    EDITTEXT        IDC_SEND_EDIT6,144,30,18,12,ES_AUTOHSCROLL
+    LTEXT           "6:",IDC_STATIC,136,31,8,8
+    EDITTEXT        IDC_SEND_EDIT7,174,30,18,12,ES_AUTOHSCROLL
+    LTEXT           "7:",IDC_STATIC,166,31,8,8
+    EDITTEXT        IDC_SEND_EDIT8,84,48,18,12,ES_AUTOHSCROLL
+    LTEXT           "8:",IDC_STATIC,76,49,8,8
+    EDITTEXT        IDC_SEND_EDIT9,114,48,18,12,ES_AUTOHSCROLL
+    LTEXT           "9:",IDC_STATIC,105,49,8,8
+    PUSHBUTTON      "||",IDC_STOP,534,25,18,18
+    PUSHBUTTON      "＞",IDC_PLAY,516,12,54,12
+    PUSHBUTTON      "|>",IDC_SLOW,552,25,18,18
+    PUSHBUTTON      "<|",IDC_BACK,516,25,18,18
+    PUSHBUTTON      "<<",IDC_RWD,516,43,54,11
+    GROUPBOX        "Values to Send",IDC_STATIC,66,0,138,90
+    EDITTEXT        IDC_GP_EDIT0,228,12,36,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_GP_EDIT1,288,12,36,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_GP_EDIT2,348,12,36,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_GP_EDIT3,408,12,36,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Out0:",IDC_STATIC,208,13,20,8
+    GROUPBOX        "General Purpose",IDC_STATIC,204,0,246,90
+    LTEXT           "Out1:",IDC_STATIC,267,13,20,8
+    LTEXT           "Out2:",IDC_STATIC,328,13,20,8
+    LTEXT           "Out3:",IDC_STATIC,388,13,20,8
+    GROUPBOX        "USB Control",IDC_STATIC,6,0,60,66
+    GROUPBOX        "File Replay",IDC_STATIC,450,0,126,60
+    CONTROL         "With Proc",IDC_WPROC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,459,28,47,10
+    EDITTEXT        IDC_RATE_EDIT,475,42,20,14,ES_AUTOHSCROLL
+    LTEXT           "Rate:",IDC_STATIC,456,44,19,8
+    LTEXT           "ms",IDC_STATIC,498,44,10,8
+    CTEXT           "Command ?",IDC_STATE,12,78,54,8
+    PUSHBUTTON      "Set",IDC_GP_SET,396,66,48,12
+    EDITTEXT        IDC_GP_EDIT6,348,30,36,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_GP_EDIT7,408,30,36,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_GP_EDIT4,228,30,36,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_GP_EDIT5,288,30,36,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Out4:",IDC_STATIC,208,31,20,8
+    LTEXT           "Out5:",IDC_STATIC,268,31,20,8
+    LTEXT           "Out6:",IDC_STATIC,328,31,20,8
+    LTEXT           "Out7:",IDC_STATIC,388,31,20,8
+    EDITTEXT        IDC_GP_EDIT8,228,48,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GP_EDIT9,288,48,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GP_EDIT10,348,48,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GP_EDIT11,408,48,36,12,ES_AUTOHSCROLL
+    LTEXT           "In0:",IDC_STATIC,214,49,14,8
+    LTEXT           "In1:",IDC_STATIC,274,49,14,8
+    LTEXT           "In2:",IDC_STATIC,334,49,14,8
+    LTEXT           "In3:",IDC_STATIC,394,49,14,8
+    EDITTEXT        IDC_GP_EDIT12,228,66,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GP_EDIT13,288,66,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GP_EDIT14,348,66,36,12,ES_AUTOHSCROLL
+    LTEXT           "In4:",IDC_STATIC,214,67,14,8
+    LTEXT           "In5:",IDC_STATIC,274,67,14,8
+    LTEXT           "In6:",IDC_STATIC,334,67,14,8
+    EDITTEXT        IDC_SEND_EDIT10,144,48,18,12,ES_AUTOHSCROLL
+    LTEXT           "10:",IDC_STATIC,132,49,12,8
+    EDITTEXT        IDC_SEND_EDIT11,174,48,18,12,ES_AUTOHSCROLL
+    LTEXT           "11:",IDC_STATIC,162,49,12,8
+    EDITTEXT        IDC_SEND_EDIT12,84,66,18,12,ES_AUTOHSCROLL
+    LTEXT           "12:",IDC_STATIC,72,67,12,8
+    EDITTEXT        IDC_SEND_EDIT13,114,66,18,12,ES_AUTOHSCROLL
+    LTEXT           "13:",IDC_STATIC,102,67,12,8
+END
+
+IDD_DIALOG_DISP DIALOGEX 0, 0, 142, 73
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "InSight USB v1.3"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_WAVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_DIALOG_EXPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 141
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 47
+    END
+
+    IDD_DIALOG_CTRL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 573
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_DIALOG_DISP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 135
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Exit",                        ID_FILE_EXIT
+        MENUITEM SEPARATOR
+        MENUITEM "Export",                      ID_FILE_EXPORT
+    END
+    POPUP "Window"
+    BEGIN
+        MENUITEM "WaveForm",                    ID_WINDOW_SHOWWAVE
+    END
+END
+
+IDR_MENU2 MENU
+BEGIN
+    POPUP "Menu"
+    BEGIN
+        MENUITEM "Stop",                        ID_MENU_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "Save",                        ID_MENU_SAVE
+    END
+END
+
+IDR_MENU3 MENU
+BEGIN
+    POPUP "dummy"
+    BEGIN
+        MENUITEM "GrayScale",                   ID_POPUP_GRAY
+        MENUITEM "Color",                       ID_POPUP_COLOR
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "InSight.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "BackGround_100.bmp"
+
+IDB_BITMAP2             BITMAP                  "BackGround_200.bmp"
+
+IDB_BITMAP3             BITMAP                  "BackGround_300.bmp"
+
+IDB_BITMAP4             BITMAP                  "BackGround_128.bmp"
+
+IDB_BITMAP5             BITMAP                  "BackGround_256.bmp"
+
+IDB_BITMAP6             BITMAP                  "BackGround_384.bmp"
+
+IDB_BITMAP7             BITMAP                  "BackGround_QQVGA.bmp"
+
+IDB_BITMAP8             BITMAP                  "BackGround_QVGA.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG_CTRL AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
